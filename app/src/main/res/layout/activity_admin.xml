@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AdminActivity">
+
+    <LinearLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:columnCount="1"
+            android:rowCount="1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="#e04f5f"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="20dp"
+                    />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/admin" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admin Panel"
+                    android:textSize="32sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="55dp"
+                    android:textColor="#FAFAFA"  />
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </GridLayout>
+        <!-- <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="300dp"
+             android:background="#EC407A">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Admin Panel"
+                 android:textColor="#FFFFFF"
+                 android:textSize="32sp"
+                 android:layout_marginTop="32dp"
+                 android:layout_marginLeft="20dp" />
+
+             <ImageView
+                 android:id="@+id/admin_icon"
+                 android:src="@drawable/admin"
+                 android:layout_height="60dp"
+                 android:layout_width="60dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="20dp"
+                 android:layout_marginTop="32dp"/>
+
+
+
+         </RelativeLayout> -->
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:rowCount="2"
+            android:layout_marginTop="20dp">
+
+            <!-- add card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp" />
+
+                <ImageView
+                    android:id="@+id/hotel_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/hotel"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"/>
+
+                <Button
+                    android:id="@+id/addHotel_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn_corners"
+                    android:text="Add Hotel"
+                    android:textColor="#ffffff"/>
+                <!-- <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="150dp"
+                     android:layout_marginBottom="5dp"
+                     android:text="Add Hotel"
+                     android:textColor="#F44336"
+                     android:textSize="24sp"
+                     android:layout_gravity="center_horizontal" /> -->
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- room -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:orientation="vertical"
+                    />
+
+                <ImageView
+                    android:id="@+id/room_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/room"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"/>
+
+                <Button
+                    android:id="@+id/addRoom_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn_corners"
+                    android:text="Add Room"
+                    android:textColor="#ffffff"/>
+
+
+                <!-- <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="150dp"
+                     android:text="Add Room"
+                     android:textColor="#F44336"
+                     android:textSize="24sp"
+                     android:layout_marginBottom="5dp"
+                     android:layout_gravity="center_horizontal" />-->
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- update card-->
+            <!--   <androidx.cardview.widget.CardView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_rowWeight="1"
+                   android:layout_columnWeight="1"
+                   android:layout_margin="12dp"
+                   app:cardCornerRadius="12dp"
+                   app:cardElevation="6dp">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:padding="16dp"
+                       android:orientation="vertical"
+                       />
+
+                   <ImageView
+                       android:id="@+id/update_icon"
+                       android:layout_width="100dp"
+                       android:layout_height="100dp"
+                       android:src="@drawable/refresh"
+                       android:layout_gravity="center_horizontal"
+                       android:layout_marginTop="40dp"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="150dp"
+                       android:layout_marginBottom="5dp"
+                       android:text="Update Hotel"
+                       android:textColor="#F44336"
+                       android:textSize="24sp"
+                       android:layout_gravity="center_horizontal" />
+
+               </androidx.cardview.widget.CardView>-->
+
+            <!-- delete card-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:orientation="vertical"
+                    />
+
+                <ImageView
+                    android:id="@+id/delete_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/eraser"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"/>
+
+                <Button
+                    android:id="@+id/delete_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn_corners"
+                    android:text="Delete Hotel"
+                    android:textColor="#ffffff"/>
+
+                <!-- <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="150dp"
+                     android:text="Delete Hotel"
+                     android:textColor="#F44336"
+                     android:textSize="24sp"
+                     android:layout_marginBottom="5dp"
+                     android:layout_gravity="center_horizontal" /> -->
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- search card-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:orientation="vertical"
+                    />
+
+                <ImageView
+                    android:id="@+id/search_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/search_icon"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"/>
+
+                <Button
+                    android:id="@+id/search_btn"
+                    android:layout_width="110dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn_corners"
+                    android:text="Search Hotel"
+                    android:textColor="#ffffff"/>
+
+
+                <!-- <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="150dp"
+                     android:text="Search Hotel"
+                     android:textColor="#F44336"
+                     android:textSize="24sp"
+                     android:layout_marginBottom="5dp"
+                     android:layout_gravity="center_horizontal" />-->
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/btnAdminLogOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_corners"
+            android:text="Log Out"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</ScrollView>

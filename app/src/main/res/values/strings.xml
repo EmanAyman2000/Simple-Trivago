@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TrivagoProject</string>
+    <string-array name="hotelLocation">
+        <item> Egypt </item>
+        <item> 	United States </item>
+        <item> Italy </item>
+        <item> Germany </item>
+        <item> France </item>
+    </string-array>
+
+</resources>

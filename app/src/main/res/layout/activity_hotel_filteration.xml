@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffd07d"
+    android:orientation="vertical"
+    tools:context=".HotelFilteration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:columnCount="1"
+            android:rowCount="1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="#e04f5f"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/rate" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="70dp"
+                    android:text="Rate a hotel"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+        <RatingBar
+            android:id="@+id/rbHotelRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:clickable="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose hotel's name:"
+            android:textColor="#F44336"
+            android:textSize="20sp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/sHotelLocation"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:entries="@array/hotelLocation"
+                android:background="@drawable/new_corners" />
+
+            <Button
+                android:id="@+id/btnFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Filter"
+                android:textColor="#ffffff"
+                android:background="@drawable/btn_corners"/>
+
+        </LinearLayout>
+
+
+
+        <ListView
+            android:id="@+id/lvShowFilteredHotels"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:background="@color/cardview_light_background"/>
+
+        <Button
+            android:id="@+id/btnLogOut"
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_corners"
+            android:text="Log Out"
+            android:textColor="#ffffff" />
+
+        <!-- <TextView
+             android:id="@+id/textView"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="83dp"
+             android:layout_marginLeft="83dp"
+             android:layout_marginTop="39dp"
+             android:layout_marginEnd="262dp"
+             android:layout_marginRight="262dp"
+             android:layout_marginBottom="17dp"
+             android:text="Please Choose The Hotel Rate"
+             app:layout_constraintBottom_toTopOf="@+id/rbHotelRate"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" /> -->
+
+        <!--  <TextView
+              android:id="@+id/textView2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="16dp"
+              android:layout_marginLeft="16dp"
+              android:layout_marginTop="21dp"
+              android:layout_marginEnd="164dp"
+              android:layout_marginRight="164dp"
+              android:layout_marginBottom="15dp"
+              android:text="Please Choose The Hotel Locatiotion"
+              app:layout_constraintBottom_toTopOf="@+id/sHotelLocation"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/rbHotelRate" /> -->
+    </LinearLayout>
+</ScrollView>
